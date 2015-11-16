@@ -22,3 +22,14 @@ test('it should handle multiple data types', t => {
   t.same(expected, toSql(data))
   t.end()
 })
+
+test('it should handle single quotes', t => {
+  let expected = "INSERT INTO test (beep, boop, bap) VALUES ('beep\\'s', 'boop', 'bap'), ('test', 123, NULL)"
+  let data = [
+    {'beep': "beep's", 'boop': 'boop', 'bap': 'bap'},
+    {'beep': 'test', 'boop': 123, 'bap': null}
+  ]
+
+  t.same(expected, toSql(data))
+  t.end()
+})
