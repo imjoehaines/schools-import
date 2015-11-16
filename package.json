@@ -1,0 +1,17 @@
+{
+  "name": "schoolsimport",
+  "version": "1.0.0",
+  "description": "Parses an 'eschools.csv' file into SQL insert statement",
+  "main": "index.js",
+  "dependencies": {
+    "csv-parse": "^1.0.0",
+    "squel": "^4.2.2"
+  },
+  "devDependencies": {
+    "ava": "^0.4.2"
+  },
+  "scripts": {
+    "test": "./node_modules/ava/cli.js spec"
+  },
+  "author": ""
+}
