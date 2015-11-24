@@ -8,10 +8,12 @@
     "squel": "^4.2.2"
   },
   "devDependencies": {
-    "ava": "^0.4.2"
+    "ava": "^0.4.2",
+    "snazzy": "^2.0.1",
+    "standard": "^5.4.1"
   },
   "scripts": {
-    "test": "./node_modules/ava/cli.js spec"
+    "test": "standard --verbose | snazzy && ./node_modules/ava/cli.js spec"
   },
   "author": ""
 }

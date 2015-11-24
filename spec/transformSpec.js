@@ -91,7 +91,7 @@ test('it should convert the "date" fields to actual date fields', t => {
       'sgsgd',
       'dhdrs',
       '',
-      '',
+      ''
     ]
   ]
 
