@@ -9,7 +9,6 @@ test('it should transform data based on headings', t => {
   let data = [['beep', 'boop', 'bop']]
 
   t.same(expected, transform(data))
-  t.end()
 })
 
 test('it should transform multiple rows based on headings', t => {
@@ -28,7 +27,6 @@ test('it should transform multiple rows based on headings', t => {
   ]
 
   t.same(expected, transform(data))
-  t.end()
 })
 
 test('it should convert empty strings to null', t => {
@@ -37,7 +35,6 @@ test('it should convert empty strings to null', t => {
   let data = [['', '', 'bop']]
 
   t.same(expected, transform(data))
-  t.end()
 })
 
 test('it should convert the "date" fields to actual date fields', t => {
@@ -96,5 +93,4 @@ test('it should convert the "date" fields to actual date fields', t => {
   ]
 
   t.same(expected, transform(data))
-  t.end()
 })

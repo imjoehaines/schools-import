@@ -9,7 +9,6 @@ test('it should convert some data to an SQL insert', t => {
   let data = [{'beep': 'beep', 'boop': 'boop', 'bap': 'bap'}]
 
   t.same(expected, toSql(data))
-  t.end()
 })
 
 test('it should handle multiple data types', t => {
@@ -20,7 +19,6 @@ test('it should handle multiple data types', t => {
   ]
 
   t.same(expected, toSql(data))
-  t.end()
 })
 
 test('it should handle single quotes', t => {
@@ -31,5 +29,4 @@ test('it should handle single quotes', t => {
   ]
 
   t.same(expected, toSql(data))
-  t.end()
 })

@@ -8,7 +8,7 @@
     "squel": "^4.2.2"
   },
   "devDependencies": {
-    "ava": "^0.4.2",
+    "ava": "^0.7.0",
     "snazzy": "^2.0.1",
     "standard": "^5.4.1"
   },
